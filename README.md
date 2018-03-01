@@ -1,0 +1,1 @@
+Using placeholder images from [lorempixel](http://lorempixel.com/400/200/).
