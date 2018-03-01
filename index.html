@@ -31,11 +31,60 @@
 				<div id="meusdados-warning">
 					<p><span class="red-alert">Atenção:</span> O CPF não poderá ser alterado posteriormente, atenção aos seus dados, eles são muito importantes para a identificação e validação da sua assinatura.</p>
 				</div>
-				<button class="button">Cadastre aqui o seu endereço para receber o seu cartão-ingresso</button>
+				<div class="container-payflow-bottomrow">
+					<button class="button">Cadastre aqui o seu endereço para receber o seu cartão-ingresso</button>
+				</div>
 			</div>
 			<div class="child-container container-payflow">
 				<h1 class="container-subtitle">PAGAMENTO</h1>
 				<div class="child-container-number">2</div>
+				<div class="container-input">
+					<label>Forma de Pagamento</label>
+					<select>
+						<option>Cartão de Crédito</option>
+						<option>Pagseguro</option>
+					</select>
+				</div>
+				<div class="container-input">
+					<label>Nome do portador (Impresso no cartão)</label>
+					<input type="text" placeholder="Nome completo" value="Carlos Eduardo P CARVALHO" />
+				</div>
+				<div class="container-input">
+					<label>CPF</label>
+					<input type="text" value="554.456.565-7" placeholder="114.604.194-74" />
+				</div>
+				<div class="pagamento-cartaonum">
+					<div class="pagamento-cartaonum-col1">
+						<div class="container-input">
+							<input type="text" placeholder="Número do cartão" />
+						</div>
+						<div class="pagamento-cartaonum-bottomrow">
+							<div class="pagamento-cartaonum-mes">
+								<div class="container-input">
+									<label>&nbsp;</label>
+									<input type="text" placeholder="Mês" />
+								</div>
+							</div>
+							<div class="pagamento-cartaonum-ano">
+								<div class="container-input">
+									<label>&nbsp;</label>
+									<input type="text" placeholder="Ano" />
+								</div>
+							</div>
+							<div class="pagamento-cartaonum-codseguranca">
+								<div class="container-input">
+									<label>Código de segurança</label>
+									<input type="text" placeholder="000" value="012" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pagamento-cartaonum-bandeira"></div>
+				</div>
+				<div class="container-payflow-bottomrow">
+					<button id="pagamento-button-multiplus" class="button">Pagar com pontos Multiplus</button>
+					<button id="pagamento-button-peela" class="button">Pagar com cartão Peela</button>
+				</div>
 			</div>
 			<div class="child-container container-payflow">
 				<h1 class="container-subtitle">PEDIDO</h1>

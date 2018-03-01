@@ -61,14 +61,29 @@ body {
 	float: right;
 }
 
+.container-payflow-bottomrow {
+	margin-top: 25px;
+	width: 100%;
+}
+
 /* end of bottom-child */
 
 /* shared */
 
-.bottom-border, .container-input input {
+.container-input select {
+	background-image: linear-gradient(45deg, transparent 50%, rgb(200, 0, 0) 50%), 
+	linear-gradient(135deg, rgb(200, 0, 0) 50%, transparent 50%);
+	background-position:
+    calc(100% - 7px),
+    calc(100% - 2px);
+	background-size: 5px 5px, 5px 5px, 1px 1.5em;
+	background-repeat: no-repeat;
+    -webkit-appearance: none;
+}
+
+.bottom-border, .container-input input, .container-input select {
 	border: 0;
 	outline: 0;
-	background: transparent;
 	border-bottom: 1px solid rgb(200, 0, 0);
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -100,6 +115,11 @@ body {
 	color: rgb(200, 0, 0);
 	padding: 1.5%;
 	width: 100%;
+	font-size: 0.7em;
+}
+
+.button:hover {
+	cursor: pointer;
 }
 
 /* end of shared */
@@ -112,10 +132,10 @@ body {
 }
 
 .container-input label {
-	font-size: 0.75em;
+	font-size: 0.65em;
 }
 
-.container-input input {
+.container-input input, .container-input select {
 	display: block;
 	width: 100%;
 	font-size: 1.1em;
@@ -126,9 +146,46 @@ body {
 /* 'meus dados' */
 
 #meusdados-warning {
-	font-size: 0.75em;
+	font-size: 0.65em;
 	font-weight: 100;
 	text-align: justify;
+	margin-top: 25px;
 }
 
 /* end of 'meus dados' */
+
+/* 'pagamento' */
+
+.pagamento-cartaonum-col1 {
+	width: 80%;
+	overflow: auto;
+}
+
+.pagamento-cartaonum-col1 > div {
+	margin-top: 6%;
+}
+
+.pagamento-cartaonum-codseguranca {
+	width: 40%;
+	float: right;
+}
+
+.pagamento-cartaonum-ano, .pagamento-cartaonum-mes {
+	width: 27%;
+	margin-right: 3%;
+	float: left;
+}
+
+#pagamento-button-multiplus, #pagamento-button-peela {
+	width: 48%;
+}
+
+#pagamento-button-multiplus {
+	float: left;
+}
+
+#pagamento-button-peela {
+	float: right;
+}
+
+/* end of 'pagamento' */
