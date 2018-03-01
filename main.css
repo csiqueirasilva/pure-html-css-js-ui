@@ -1,0 +1,57 @@
+body {
+	background-color: rgb(228, 228, 228);
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.container-title {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.container-subtitle {
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+#escolha-plano {
+	border: 3px solid rgb(100, 160, 255);
+}
+
+.bottom-border {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid #f00;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	padding-bottom: 10%;
+}
+
+#top-container {
+	margin: 2vw;
+	margin-bottom: 0;
+}
+
+.child-container {
+	background-color: white;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-bottom: 2vh;
+	height: 41vh;
+}
+
+.container-payflow {
+	display: inline-block;
+	width: 26.5vw;
+}
+
+.container-payflow:nth-of-type(3) {
+	margin-left: 1.65vw;
+}
+
+.container-payflow:last-child {
+	float: right;
+}
