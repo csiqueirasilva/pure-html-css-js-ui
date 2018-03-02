@@ -49,6 +49,7 @@ body {
 }
 
 .container-payflow {
+	min-height: 400px;
 	width: 26.5vw;
 	float: left;
 }
