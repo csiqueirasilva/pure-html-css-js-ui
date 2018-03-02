@@ -156,8 +156,13 @@ body {
 
 /* 'pagamento' */
 
+.pagamento-cartaonum {
+	position: relative;
+}
+
 .pagamento-cartaonum-col1 {
 	width: 80%;
+	display: inline-block;
 	overflow: auto;
 }
 
@@ -186,6 +191,14 @@ body {
 
 #pagamento-button-peela {
 	float: right;
+}
+
+#pagamento-cartaonum-bandeira {
+	width: 15%;
+	height: auto;
+	position: absolute;
+	right: 3%;
+	top: 20%;
 }
 
 /* end of 'pagamento' */
