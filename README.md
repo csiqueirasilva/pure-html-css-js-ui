@@ -1,1 +1,1 @@
-Using placeholder images from [lorempixel](http://lorempixel.com/400/200/).
+Best viewed at resolutions with width up to 452px. Threshold to change into mobile version is 1200px.

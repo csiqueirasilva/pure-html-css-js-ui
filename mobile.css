@@ -84,4 +84,10 @@
 	}
 	
 	/* end of 'escolha plano' */
+	
+	.container-payflow {
+		min-height: auto;
+		height: auto;
+		overflow-y: auto;
+	}
 }
