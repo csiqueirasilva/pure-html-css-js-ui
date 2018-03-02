@@ -206,6 +206,10 @@ body {
 
 /* 'escolha plano' */
 
+#escolha-plano-select option {
+	direction: rtl;
+}
+
 #escolha-plano-select-wrapper {
 	margin-top: 15px;
 	min-width: 200px;
@@ -247,4 +251,32 @@ body {
 .plano:last-of-type {
 	float: right;
 }
+
+.container-input-convidados {
+	margin-top: 5%;
+}
+
+.container-input-convidados select {
+	background-image: linear-gradient(45deg, transparent 50%, rgb(200, 0, 0) 50%), 
+	linear-gradient(135deg, rgb(200, 0, 0) 50%, transparent 50%);
+	background-position:
+    calc(100% - 7px),
+    calc(100% - 2px);
+	background-size: 5px 5px, 5px 5px, 1px 1.5em;
+	background-repeat: no-repeat;
+    -webkit-appearance: none;
+	border: 0;
+	outline: 0;
+	width: 14%;
+	float: right;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 1.1em;
+}
+
+.convidados-label {
+	font-size: 1.1em;
+}
+
 /* end of 'escolha plano' */
