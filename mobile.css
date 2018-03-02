@@ -1,0 +1,87 @@
+/* hiding mobile elements */
+
+#escolha-plano-select-wrapper-mobile,
+#container-escolha-mobile,
+#escolha-plano-img-mobile {
+	display: none;
+}
+
+@media(max-width:1200px) {
+	
+	/* show these elements */
+	#escolha-plano-select-wrapper-mobile,
+	#container-escolha-mobile,
+	#escolha-plano-img-mobile {
+		display: block;
+	}
+	
+	/* end of show these elements */
+	
+	/* shared */
+
+	/* end of shared */
+
+	/* 'escolha plano' */
+	
+	.escolha-beneficios-title {
+		font-weight: 100;
+	}
+	
+	.child-container {
+		padding-right: 6vw;
+		padding-left: 6vw;
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+		clear: both !important;
+		width: 86% !important;
+		float: none !important;
+		margin-left: 0px !important;
+	}
+	
+	#escolha-beneficios-texto {
+		display: none;
+	}
+	
+	#escolha-plano-select-wrapper {
+		display: none;
+	}
+	
+	#escolha-plano-select-wrapper-mobile, #escolha-plano-img-mobile {
+		width: 49.5%;
+	}
+
+	#escolha-plano-img-mobile div {
+		text-align: right;
+	}
+	
+	#escolha-plano-img-mobile img {
+		width: auto;
+		height: 80px;
+	}
+	
+	#escolha-beneficios {
+		margin-top: 10px;
+		width: 100%;
+		position: inherit;
+		overflow: auto;
+	}
+	
+	#escolha-plano-planos {
+		display: none;
+	}
+	
+	#container-escolha-mobile {
+		margin-top: 20px;
+		width: 40%;
+		margin-left: 60%;
+	}
+
+	#container-escolha-mobile button {
+		font-weight: bold;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 0.75em;
+	}
+	
+	/* end of 'escolha plano' */
+}
