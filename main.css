@@ -82,7 +82,7 @@ body {
     -webkit-appearance: none;
 }
 
-.bottom-border, .container-input input, .container-input select {
+.bottom-border, .container-input input[type="email"], .container-input input[type="password"], .container-input input[type="text"], .container-input select {
 	border: 0;
 	outline: 0;
 	border-bottom: 1px solid rgb(200, 0, 0);
@@ -203,6 +203,86 @@ body {
 }
 
 /* end of 'pagamento' */
+
+/* 'pedido' */
+
+/* custom checkmark */
+
+.acordo-container-input {
+	font-size: 0.75em;
+}
+
+.acordo-container-input a {
+	color: #000;
+}
+
+.acordo-container-input {
+	display: block;
+	color: #ccc;
+	position: relative;
+	padding-left: 25px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#pedido-checkbox-acordo {
+	position: absolute;
+	opacity: 0;
+}
+
+.custom-checkbox {
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	height: 10px;
+	width: 10px;
+	border: 1px solid rgb(200, 0, 0);
+}
+
+.acordo-container-input:hover input ~ .custom-checkbox {
+}
+
+.custom-checkbox:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.acordo-container-input input:checked ~ .custom-checkbox:after {
+	display: block;
+}
+
+.acordo-container-input .custom-checkbox:after {
+	left: 2px;
+	top: -1px;
+	width: 3px;
+	height: 6px;
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* end of custom checkmark */
+
+#pedido-button-voltar, #pedido-button-finalizar {
+	width: 48%;
+}
+
+#pedido-button-voltar {
+	float: left;
+}
+
+#pedido-button-finalizar {
+	float: right;
+	color: white;
+	background-color: rgb(200, 0, 0);
+}
+
+/* end of 'pedido' */
 
 /* 'escolha plano' */
 
